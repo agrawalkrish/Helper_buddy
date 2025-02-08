@@ -1,6 +1,8 @@
 // frontend/app/page.tsx (Next.js Ecommerce Homepage with TypeScript)
 "use client";
 import { useState } from "react";
+import { FaRegUserCircle } from "react-icons/fa";
+import { MdOutlineShoppingBag } from "react-icons/md";
 
 export default function Home() {
   const [message, setMessage] = useState<string>("Welcome to Our Store");
@@ -10,21 +12,28 @@ export default function Home() {
       {/* Navigation Bar */}
       <nav className="bg-black text-white p-4 flex justify-between items-center">
         {/* Left Section - Logo */}
-        <div className="text-xl font-bold">E-Shop</div>
+        <div className="text-xl font-bold">HB</div>
         
-        {/* Middle Section - Navigation Links */}
-        <ul className="flex space-x-6">
-          <li><a href="#" className="hover:underline">Home</a></li>
-          <li><a href="#" className="hover:underline">Services</a></li>
-          <li><a href="#" className="hover:underline">Blog</a></li>
-          <li><a href="#" className="hover:underline">About</a></li>
-        </ul>
-        
-        {/* Right Section - User & Cart */}
-        <div className="flex space-x-4">
-          <a href="#" className="hover:underline">User</a>
-          <a href="#" className="hover:underline">Cart</a>
+        <div className="flex items-center space-x-12 px-10 ">
+          {/* Middle Section - Navigation Links */}
+          <div>
+            <ul className="text-2xl flex space-x-12">
+              <li><a href="#" className="hover:underline">Home</a></li>
+              <li><a href="#" className="hover:underline">Services</a></li>
+              <li><a href="#" className="hover:underline">Blog</a></li>
+              <li><a href="#" className="hover:underline">About</a></li>
+            </ul>
+          </div>
+
+          {/* Right Section - User & Cart */}
+          <div className="flex items-center space-x-12 px-10 ">
+            <ul className="text-2xl flex space-x-10">
+              <li><a href="#" className="hover:underline"><FaRegUserCircle size={30} /></a></li>
+              <li><a href="#" className="hover:underline"><MdOutlineShoppingBag size={30} /></a></li>
+            </ul>
+          </div>
         </div>
+
       </nav>
       
       {/* Homepage Content */}
@@ -35,23 +44,23 @@ export default function Home() {
       {/* Split Section */}
       <div className="flex w-full h-[500px]">
         <div className="w-2/5 p-4 flex flex-col items-center justify-center">
-        <h2 className="text-3xl font-bold">Welcome to Our Store</h2>
-          <p className="text-2xl mb-4">Expert Service at your doorsteps!</p>
+        <h1 className="text-6xl font-bold">Expert Services</h1><br></br>
+        <h1 className="text-4xl font-bold">At your Doorstep!</h1>
           <br />
           <button className="bg-black text-white px-10 py-3 text-lg rounded-lg">Book Now!</button>
           <br />
-          <p className="text-xl mb-4">Reliable-Fast-Affordable</p>
+          <p className="text-4xl mb-4 font-bold">Reliable-Fast-Affordable</p>
         </div>
         <div className="w-3/5 bg-gray-300 flex items-center justify-center">
-          <img src="/placeholder.jpg" alt="Ecommerce Image" className="w-full h-full object-cover" />
+          <img src="https://www.capermint.com/wp-content/uploads/2020/07/Urban-Company-Service-Provider.jpg" alt="Ecommerce Image" className="w-full h-full object-cover" />
         </div>
       </div>
 
       {/* Button Section */}
       <div className="flex justify-around p-6">
-        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg">Shop Now</button>
-        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg">Learn More</button>
-        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg">Contact Us</button>
+        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg">Dusting & Cleaning</button>
+        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg">Repairing & Maintenance</button>
+        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg">Plumbing & Electrical</button>
       </div>
 
       {/* Footer Section */}
