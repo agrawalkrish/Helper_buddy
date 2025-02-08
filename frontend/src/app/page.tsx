@@ -12,30 +12,29 @@ export default function Home() {
       {/* Navigation Bar */}
       <nav className="bg-black text-white p-4 flex justify-between items-center">
         {/* Left Section - Logo */}
-        <div className="text-xl font-bold">HB</div>
-        
-        <div className="flex items-center space-x-12 px-10 ">
+        <div className="text-3xl px-8 font-bold">HB</div>
+
+        <div className="flex items-center space-x-12 px-10">
           {/* Middle Section - Navigation Links */}
           <div>
-            <ul className="text-2xl flex space-x-12">
-              <li><a href="#" className="hover:underline">Home</a></li>
-              <li><a href="#" className="hover:underline">Services</a></li>
-              <li><a href="#" className="hover:underline">Blog</a></li>
-              <li><a href="#" className="hover:underline">About</a></li>
+            <ul className="text-xl flex space-x-12">
+              <li><a href="#" className="hover:text-gray-300 hover:underline transition duration-300">Home</a></li>
+              <li><a href="#" className="hover:text-gray-300 hover:underline transition duration-300">Services</a></li>
+              <li><a href="#" className="hover:text-gray-300 hover:underline transition duration-300">Blog</a></li>
+              <li><a href="#" className="hover:text-gray-300 hover:underline transition duration-300">About</a></li>
             </ul>
           </div>
 
           {/* Right Section - User & Cart */}
-          <div className="flex items-center space-x-12 px-10 ">
-            <ul className="text-2xl flex space-x-10">
-              <li><a href="#" className="hover:underline"><FaRegUserCircle size={30} /></a></li>
-              <li><a href="#" className="hover:underline"><MdOutlineShoppingBag size={30} /></a></li>
+          <div className="flex items-center space-x-12 px-10">
+            <ul className="text-xl flex space-x-10">
+              <li><a href="#" className="hover:text-gray-300 transition duration-300"><FaRegUserCircle size={30} /></a></li>
+              <li><a href="#" className="hover:text-gray-300 transition duration-300"><MdOutlineShoppingBag size={30} /></a></li>
             </ul>
           </div>
         </div>
-
       </nav>
-      
+
       {/* Homepage Content */}
       {/* <div className="flex items-center justify-center h-screen text-4xl font-bold">
         {message}
@@ -44,10 +43,12 @@ export default function Home() {
       {/* Split Section */}
       <div className="flex w-full h-[500px]">
         <div className="w-2/5 p-4 flex flex-col items-center justify-center">
-        <h1 className="text-6xl font-bold">Expert Services</h1><br></br>
-        <h1 className="text-4xl font-bold">At your Doorstep!</h1>
+          <h1 className="text-6xl font-bold">Expert Services</h1><br />
+          <h1 className="text-4xl font-bold">At Your Doorstep!</h1>
           <br />
-          <button className="bg-black text-white px-10 py-3 text-lg rounded-lg">Book Now!</button>
+          <button className="bg-black text-white px-10 py-3 text-lg rounded-lg transition duration-300 hover:bg-gray-800 hover:scale-105">
+            Book Now!
+          </button>
           <br />
           <p className="text-4xl mb-4 font-bold">Reliable-Fast-Affordable</p>
         </div>
@@ -58,9 +59,15 @@ export default function Home() {
 
       {/* Button Section */}
       <div className="flex justify-around p-6">
-        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg">Dusting & Cleaning</button>
-        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg">Repairing & Maintenance</button>
-        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg">Plumbing & Electrical</button>
+        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg transition duration-300 hover:bg-gray-800 hover:scale-105">
+          Dusting & Cleaning
+        </button>
+        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg transition duration-300 hover:bg-gray-800 hover:scale-105">
+          Repairing & Maintenance
+        </button>
+        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg transition duration-300 hover:bg-gray-800 hover:scale-105">
+          Plumbing & Electrical
+        </button>
       </div>
 
       {/* Footer Section */}
