@@ -34,8 +34,13 @@ export default function Home() {
 
       {/* Split Section */}
       <div className="flex w-full h-[500px]">
-        <div className="w-2/5 p-4 flex items-center justify-center">
-          <p className="text-xl">Explore the latest trends and best deals.</p>
+        <div className="w-2/5 p-4 flex flex-col items-center justify-center">
+        <h2 className="text-3xl font-bold">Welcome to Our Store</h2>
+          <p className="text-2xl mb-4">Expert Service at your doorsteps!</p>
+          <br />
+          <button className="bg-black text-white px-10 py-3 text-lg rounded-lg">Book Now!</button>
+          <br />
+          <p className="text-xl mb-4">Reliable-Fast-Affordable</p>
         </div>
         <div className="w-3/5 bg-gray-300 flex items-center justify-center">
           <img src="/placeholder.jpg" alt="Ecommerce Image" className="w-full h-full object-cover" />
@@ -44,9 +49,9 @@ export default function Home() {
 
       {/* Button Section */}
       <div className="flex justify-around p-6">
-        <button className="bg-black text-white px-10 py-5 rounded-lg">Shop Now</button>
-        <button className="bg-black text-white px-10 py-4 rounded-lg">Learn More</button>
-        <button className="bg-black text-white px-10 py-4 rounded-lg">Contact Us</button>
+        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg">Shop Now</button>
+        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg">Learn More</button>
+        <button className="bg-black text-white px-16 py-5 text-lg rounded-lg">Contact Us</button>
       </div>
 
       {/* Footer Section */}
