@@ -42,6 +42,13 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Button Section */}
+      <div className="flex justify-around p-6">
+        <button className="bg-black text-white px-10 py-5 rounded-lg">Shop Now</button>
+        <button className="bg-black text-white px-10 py-4 rounded-lg">Learn More</button>
+        <button className="bg-black text-white px-10 py-4 rounded-lg">Contact Us</button>
+      </div>
+
       {/* Footer Section */}
       <footer className="bg-black text-white p-6 text-center">
         © 2024 E-Shop. All rights reserved.
