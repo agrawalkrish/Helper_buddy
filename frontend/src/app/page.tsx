@@ -18,10 +18,10 @@ export default function Home() {
           {/* Middle Section - Navigation Links */}
           <div>
             <ul className="text-xl flex space-x-12">
-              <li><a href="#" className="hover:text-gray-300 hover:underline transition duration-300">Home</a></li>
+              <li><a href="/" className="hover:text-gray-300 hover:underline transition duration-300">Home</a></li>
               <li><a href="#" className="hover:text-gray-300 hover:underline transition duration-300">Services</a></li>
-              <li><a href="#" className="hover:text-gray-300 hover:underline transition duration-300">Blog</a></li>
-              <li><a href="#" className="hover:text-gray-300 hover:underline transition duration-300">About</a></li>
+              <li><a href="/Testimonial" className="hover:text-gray-300 hover:underline transition duration-300">Blog</a></li>
+              <li><a href="/about" className="hover:text-gray-300 hover:underline transition duration-300">About</a></li>
             </ul>
           </div>
 
@@ -69,7 +69,10 @@ export default function Home() {
           Plumbing & Electrical
         </button>
       </div>
-
+     {/*  Testimonial */}
+      <div className="">
+        
+      </div>
       {/* Footer Section */}
       <footer className="bg-black text-white p-6 text-center">
         © 2024 E-Shop. All rights reserved.
