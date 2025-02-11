@@ -78,5 +78,6 @@ export default function Home() {
         © 2024 E-Shop. All rights reserved.
       </footer>
     </div>
+    
   );
 }
