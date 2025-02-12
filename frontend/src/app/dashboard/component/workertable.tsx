@@ -1,4 +1,4 @@
-import { getWorkers } from '@/app/lib/data'
+import { getWorkers } from '@/lib/data'
 
 export default async function WorkersTable() {
   const workers = await getWorkers()
