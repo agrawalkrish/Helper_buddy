@@ -24,11 +24,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Add the Razorpay script here */}
+        <script
+          src="https://checkout.razorpay.com/v1/checkout.js"
+          async
+        ></script>
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
     </html>
   );
 }
+
