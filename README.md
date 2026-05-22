@@ -1,5 +1,5 @@
 # 🛠️ HelperBuddy — Home Services Booking Platform
-https://helper-buddy.vercel.app/
+
 > A full-stack home services marketplace built with **Next.js 15**, **Tailwind CSS**, and **Razorpay** payment integration. HelperBuddy connects customers with skilled service professionals for home repairs, cleaning, appliance servicing, and more.
 
 ---
