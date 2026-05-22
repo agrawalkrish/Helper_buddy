@@ -324,10 +324,4 @@ HelperBuddy currently supports the following service categories:
 
 ---
 
-## 📄 License
-
-This project is private and not licensed for public distribution.
-
----
-
 <p align="center">Made with ❤️ by the HelperBuddy Team</p>
